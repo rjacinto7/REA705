@@ -12,4 +12,6 @@
 ### Please use the hyper links to navigate to the appropriate page you want to go to.
 
 
-[Schedule](/REA705/schedule.html) [Journals](/REA705/updates.html) [Code](/REA705/code.html)
+[Schedule](/REA705/schedule.html)
+[Journals](/REA705/updates.html) 
+[Code](/REA705/code.html)
