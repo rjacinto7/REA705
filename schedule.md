@@ -1,3 +1,38 @@
+## This is our weekly update page for our REA705 project
+
+### Week 1
+
+### Week 2
+
+### Week 3
+
+### Week 4
+
+### Week 5
+
+### Week 6
+
+### Week 7
+
+### Week 8
+
+### Week 9
+
+### Week 10
+
+### Week 11
+
+### Week 12
+<br />
+
+<br />
+
+
+
+
+[Schedule](/REA705/schedule.html)  [Journals](/REA705/updates.html)  [Code](/REA705/code.html)
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/rjacinto7/REA705/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
