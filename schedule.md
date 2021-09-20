@@ -5,7 +5,7 @@
 ### Week 2
 <br /> 
 These are our week 2 tasks:
-<img src="Week2_Tasks.png" alt="Week 2 Tasks">
+<img src="Week2_Task.png" alt="Week 2 Tasks">
 
 ### Week 3
 
