@@ -6,7 +6,7 @@
 <br /> 
 These are our week 2 tasks:
 <br />
-![Week2_Tasks](Week2_Tasks.png)
+![Week2_Tasks](/REA705/Week2_Tasks.png)
 
 ### Week 3
 
