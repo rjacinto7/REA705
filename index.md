@@ -1,4 +1,5 @@
-# REA705 | Group 4 | Andrew Luk | Robert Jacinto | Vlad Kim
+### REA705 | Group 4 
+## Robert Jacinto | Andrew Luk | Vlad Kim
 
 <br />
 
