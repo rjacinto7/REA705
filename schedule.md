@@ -3,6 +3,9 @@
 ### Week 1
 
 ### Week 2
+<br /> 
+These are our week 2 tasks:
+![Week2_Tasks](Week2_Tasks.png)
 
 ### Week 3
 
