@@ -32,4 +32,4 @@ These are our week 3 tasks:
 
 <br />
 
-[Schedule](/REA705/schedule.html)  [Journals](/REA705/updates.html)  [Code](/REA705/code.html)
+[Schedule](/REA705/schedule.html)  [Journals](/REA705/updates.html)  [Code](https://github.com/rjacinto7/REA705)

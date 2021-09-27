@@ -10,4 +10,4 @@
 ### Other Pages.
 [Schedule](/REA705/schedule.html) <br />
 [Journals](/REA705/updates.html)  <br />
-[Code](/REA705/code.html)
+[Code](https://github.com/rjacinto7/REA705)
