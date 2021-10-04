@@ -1,0 +1,41 @@
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://bombay60.com/1888.php
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://srvr-cloudmail-srvr5s5wd3.pages.dev/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://www.bancalnternt1-lbk.com/
+404 https://ewjhnxm.weebly.com/
+404 http://ewjhnxm.weebly.com/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://aocznon.co.ip.36wcpd.cn/pc/
+403 https://servicioyayuda.000webhostapp.com/
+404 https://ptatt.weebly.com/
+404 https://attcornmunications.weebly.com/
+503 https://8h91i.app.link/L8DTKQdG3jb?mona
+404 https://attinterne.weebly.com/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://www.civdiff.com/US/US_launcc
+404 https://att-currently-secure.weebly.com/
+404 https://faceioook.weebly.com/
+404 https://edddebitcardactivate.weebly.com/
+404 https://ate93983893873899ge.weebly.com/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 's3ure-verify0.duckdns.org'. (_ssl.c:1123) https://s3ure-verify0.duckdns.org/
+[Errno 11001] getaddrinfo failed http://sys.amadhouses.name.ng/system/
+[Errno 11001] getaddrinfo failed http://sys.amadhouses.name.ng/system
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://mail.ajapapharma.com/isvec/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://mail.ajapapharma.com/isvec
+404 http://imperium-alpha.gera.in/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://aocznon.co.ip.36wcpd.cn/pc
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://interbankempresas.pe-il.ru
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://promobcp.solicitudalinstante-pe1.com/
+404 https://godofmercy.weebly.com/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) http://wqass-index.pygbw.cn/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) http://0i.is/reativarb-token
+404 https://lkhgxfghljgbtinter.weebly.com/
+404 https://check-mail1.weebly.com/
+[Errno 11001] getaddrinfo failed https://www.leonorebootssale.fun/
+[Errno 11001] getaddrinfo failed https://siingpore-bakiing-intrnttd.com/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://wqass-index.quanyuai.cn
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://wqass-index.lycheered.cn
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://wqass-index.jorals.cn
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://wqass-index.hz-cable.cn
+[Errno 11001] getaddrinfo failed http://yape.portalbono.com/
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://wqass-index.hljk02.cn
+[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1123) https://wqass-index.pygbw.cn
+[Errno 11001] getaddrinfo failed http://olx.payd03.online/track?id=595118198
+[Errno 11001] getaddrinfo failed https://olx.payd03.online/track?id=595118198

@@ -96,7 +96,7 @@ for i in range(0, len(databaseResultsKnown)):
     # Sets the variable j to the URL.
     j = databaseResultsKnown[i][1]
     #Open the phishtank detailed url analysis page if the last 3 characters are "..."
-    if j[-3:] == "...":
+    if j[-3:] == "..." or "[email protected]" in j:
         #Requested Html Page
         filteredPageFullUrl = currentPageBaseUrl + databaseResultsKnown[i][0]
         currentPageFullUrlScan = requests.get(filteredPageFullUrl)
