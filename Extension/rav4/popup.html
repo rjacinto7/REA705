@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAV4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <script defer src="popup.js"></script>
+</head>
+<body>
+
+    <label for="num">Number:</label><br>
+    <input type="text" id="num" name="num" value="5"><br>
+
+    <div class="container">
+        <div class="card">
+            <header class="card-header">
+                <p class="card-header-title">
+                    RAV4
+                </p>
+            </header>
+
+            <div class="card-content has-text-centered">
+                <p class="subtitle">Text</p>
+                <div class="field">
+                    <!-- <label class="label">Message</label> -->
+                    <div class="control">
+                      <textarea class="textarea" placeholder="Enter URL or Text here"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="question">
+                        URL
+                      </label>
+                      <label class="radio">
+                        <input type="radio" name="question">
+                        Text
+                      </label>
+                    </div>
+                  </div>
+
+                <!-- Submit/cancel button -->
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-link" id="submit">Submit</button>
+                    </div>
+                    <div class="control">
+                      <button class="button is-link is-light">Cancel</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <footer class="card-footer">
+            <p class="card-footer-item">Created By: Robert, Andrew & Vlad</p>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>

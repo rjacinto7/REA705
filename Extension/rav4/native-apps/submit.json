@@ -1,0 +1,9 @@
+{
+    "name": "com.submit",
+    "description": "Submit content from extension to Python script",
+    "path": "submit.bat",
+    "type": "stdio",
+    "allowed_origins": [
+        "chrome-extension://aojhdeconbibofmnfokigejolnceoghh/"
+    ]
+}

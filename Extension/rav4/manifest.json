@@ -1,0 +1,13 @@
+{
+    "name": "RAV4",
+    "version": "1.1",
+    "description": "RAV4's Chrome Extension",
+    "manifest_version": 2,
+    "permissions" :["nativeMessaging"],
+    "browser_action": {"default_popup":"popup.html"},
+    "icons": {"128": "icons/vlad1.png"},
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      }
+}
