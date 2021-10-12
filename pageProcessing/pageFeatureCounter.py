@@ -1,3 +1,5 @@
+#Original code from websiteDownloader
+
 from urllib.parse import urlparse
 from pathlib import Path
 import urllib.request
@@ -65,7 +67,7 @@ for site in lines:
 
         #every website is saved to a seperate text file
         fileToWrite = str(outputDirectory) + ".csv"
-        with open(fileToWrite, "a") as pf:
+        with open(fileToWrite, "a", newline= '') as pf:
             write = csv.writer(pf)
             write.writerow(featureCount)
 

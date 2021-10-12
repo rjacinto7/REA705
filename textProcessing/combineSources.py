@@ -57,6 +57,6 @@ with open ("emailTrainingData20k.csv") as targetFile:
 
 print ("Total spam messages gathered from emailTrainingData20k.csv: ", totalMessages)
 
-with open ("finalTexts.txt", "w") as targetFile:
+with open ("combinedSources.txt", "w") as targetFile:
     for item in finalTexts:
         targetFile.write("%s\n" % item)
