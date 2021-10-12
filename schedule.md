@@ -15,6 +15,8 @@ These are our week 4 tasks:
 <img src="weeklyImgs\Week4_Tasks.png" alt="Week 4 Tasks">
 
 ### Week 5
+These are our week 5 tasks:
+<img src="weeklyImgs\Week5_Task.png" alt="Week 5 Tasks">
 
 ### Week 6
 
