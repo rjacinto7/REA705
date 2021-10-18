@@ -4,6 +4,6 @@
     "path": "submit.bat",
     "type": "stdio",
     "allowed_origins": [
-        "chrome-extension://aojhdeconbibofmnfokigejolnceoghh/"
+        "chrome-extension://iajljplaocghmmgaenmedhbmghemdlnn/"
     ]
 }

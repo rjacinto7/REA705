@@ -1,4 +1,4 @@
-console = chrome.extension.getBackgroundPage().console;
+
 
 let submit = document.getElementById("submit")
 let num = document.getElementById("num")
