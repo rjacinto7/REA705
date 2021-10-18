@@ -19,7 +19,8 @@ These are our week 5 tasks:
 <img src="weeklyImgs\Week5_Task.png" alt="Week 5 Tasks">
 
 ### Week 6
-
+These are our week 6 tasks:
+<img src="weeklyImgs\Week6Tasks.png" alt="Week 5 Tasks">
 ### Week 7
 
 ### Week 8
