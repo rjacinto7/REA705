@@ -1,3 +1,3 @@
 @echo off
 
-python -u "C:\Users\Andrew\Desktop\rav4\native-apps\test.py"
+python -u "O:\Semester 7\REA705\Extension\rav4\native-apps\test.py"

@@ -1,6 +1,6 @@
 {
-    "name": "com.submit",
-    "description": "Submit text from extension to Python script",
+    "name": "com.submittext",
+    "description": "Submit content from extension to Python script",
     "path": "submit.bat",
     "type": "stdio",
     "allowed_origins": [

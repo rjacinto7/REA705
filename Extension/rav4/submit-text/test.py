@@ -173,18 +173,18 @@ try:
             receivedMessage = str(receivedMessage)
 
             # URL + Page Counter
-            toBeSent = urlFeatureCounter(receivedMessage)
-            toBeSent += " " + pageFeatureCounter(receivedMessage)
+            # toBeSent = urlFeatureCounter(receivedMessage)
+            # toBeSent += " " + pageFeatureCounter(receivedMessage)
 
             # TF-IDF Cosine Similarity Average
-            # cleanedUserInput = cleanText(receivedMessage)
-            # comparitor.append(cleanedUserInput)
-            # score = 0
-            # for currentEmail in emailTexts:
-            #     comparitor.append(currentEmail)
-            #     score += cosineSimilarity(comparitor)
-            #     comparitor.pop()
-            # toBeSent = str(score/totalEmails)
+            cleanedUserInput = cleanText(receivedMessage)
+            comparitor.append(cleanedUserInput)
+            score = 0
+            for currentEmail in emailTexts:
+                comparitor.append(currentEmail)
+                score += cosineSimilarity(comparitor)
+                comparitor.pop()
+            toBeSent = str(score/totalEmails)
 
             sendMessage(encodeMessage(toBeSent))
         except:

@@ -1,7 +1,5 @@
-
-
 let submit = document.getElementById("submit")
-let num = document.getElementById("num")
+let input = document.getElementById("input")
 
 let port = null;
 
@@ -10,8 +8,21 @@ function onReceived(response) {
 }
 
 submit.addEventListener('click', () => {
-    //TODO
-    port = chrome.runtime.connectNative('com.submit');
-    port.onMessage.addListener(onReceived);
-    port.postMessage(num.value);
+    //URL
+    if (document.getElementById('url').checked){
+        alert("url")
+        port = chrome.runtime.connectNative('com.submit');
+        port.onMessage.addListener(onReceived);
+        port.postMessage(input.value);
+    }
+    //Text
+    else if (document.getElementById('text').checked){
+        alert("text")
+        port = chrome.runtime.connectNative('com.submittext');
+        port.onMessage.addListener(onReceived);
+        port.postMessage(input.value);
+    }
+    else{
+        alert("please select either url or text")
+    }
 })

@@ -10,10 +10,6 @@
     <script defer src="popup.js"></script>
 </head>
 <body>
-
-    <label for="num">Number:</label><br>
-    <input type="text" id="num" name="num" value="5"><br>
-
     <div class="container">
         <div class="card">
             <header class="card-header">
@@ -27,22 +23,28 @@
                 <div class="field">
                     <!-- <label class="label">Message</label> -->
                     <div class="control">
-                      <textarea class="textarea" placeholder="Enter URL or Text here"></textarea>
+                      <textarea class="textarea" id="input" placeholder="Enter URL or Text here"></textarea>
                     </div>
                   </div>
 
-                  <div class="field">
+                  <div>
+                    <input type="radio" id="url" name="option" value="url"
+                           checked>
+                    <label for="url">URL</label>
+
+                    <input type="radio" id="text" name="option" value="text">
+                    <label for="text">Text</label>
+                  </div>
+                  <!-- <div class="field">
                     <div class="control">
-                      <label class="radio">
-                        <input type="radio" name="question">
+                      <label class="radio" id="option">
+                        <input type="radio" name="url" value="1">
                         URL
-                      </label>
-                      <label class="radio">
-                        <input type="radio" name="question">
+                        <input type="radio" name="text" value="0">
                         Text
                       </label>
                     </div>
-                  </div>
+                  </div> -->
 
                 <!-- Submit/cancel button -->
                   <div class="field is-grouped">
