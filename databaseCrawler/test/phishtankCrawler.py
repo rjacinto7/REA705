@@ -7,7 +7,7 @@ import sys
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 baseURL = "https://phishtank.org/phish_archive.php?page="
-pagesToScan  = 20
+pagesToScan  = 5
 databaseResultsKnown = []
 databaseResultsAll = []
 
