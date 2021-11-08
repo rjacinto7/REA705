@@ -172,11 +172,6 @@ try:
         try:
             receivedMessage = str(receivedMessage)
 
-            # URL + Page Counter
-            # toBeSent = urlFeatureCounter(receivedMessage)
-            # toBeSent += " " + pageFeatureCounter(receivedMessage)
-
-            # TF-IDF Cosine Similarity Average
             cleanedUserInput = cleanText(receivedMessage)
             comparitor.append(cleanedUserInput)
             score = 0
@@ -184,7 +179,18 @@ try:
                 comparitor.append(currentEmail)
                 score += cosineSimilarity(comparitor)
                 comparitor.pop()
-            toBeSent = str(score/totalEmails)
+            score = score/totalEmails
+            if score <= 0.015:
+                nameScore = "Low attention\n"
+            if score <= 0.015:
+                nameScore = "Proceed with some caution\n"
+            elif score > 0.015 and score <= 0.025:
+                namescore = "Proceed with caution\n"
+            elif score > 0.025 and score <= 0.035:
+                namescore = "Proceed with extreme caution\n"
+            elif score > 0.035:
+                namescore = "High possibility of spam/phishing\n"
+            toBeSent = str(namescore)
 
             sendMessage(encodeMessage(toBeSent))
         except:
