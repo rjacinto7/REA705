@@ -27,7 +27,7 @@ These are our week 7 tasks:
 
 ### Week 8
 These our our week 8 tasks:
-<img src="weeklyImgs\Week8Tasks.png" alt="Week 8 Tasks">
+<img src="weeklyImgs\Week8_Tasks.png" alt="Week 8 Tasks">
 
 ### Week 9
 
