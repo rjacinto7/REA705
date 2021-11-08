@@ -10,7 +10,7 @@ import re
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 baseURL = "https://phishtank.org/phish_search.php?page="
-endURL = "&valid=y&Search=Search"
+endURL = "&valid=n&Search=Search"
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36'}
 pagesToScan  = 100
 #This is for checking if we already have the URL
