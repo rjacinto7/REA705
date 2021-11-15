@@ -30,6 +30,8 @@ These our our week 8 tasks:
 <img src="weeklyImgs\Week8_Tasks.png" alt="Week 8 Tasks">
 
 ### Week 9
+These our our week  tasks:
+<img src="weeklyImgs\Week9_Tasks.png" alt="Week 9 Tasks">
 
 ### Week 10
 
