@@ -30,8 +30,13 @@ These our our week 8 tasks:
 <img src="weeklyImgs\Week8_Tasks.png" alt="Week 8 Tasks">
 
 ### Week 9
+<<<<<<< Updated upstream
 These our our week  tasks:
 <img src="weeklyImgs\Week9_Tasks.png" alt="Week 9 Tasks">
+=======
+These our our week 9 tasks:
+<img src="weeklyImgs\Week9Tasks.png" alt="Week 9 Tasks">
+>>>>>>> Stashed changes
 
 ### Week 10
 
