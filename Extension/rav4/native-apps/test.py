@@ -133,12 +133,14 @@ try:
             data = countedPageFeatures + countedURLFeatures
             data = np.reshape(data, (-1, 21))
             prediction = mp.predict(data)
-            prediction = str(prediction)
+            prediction = prediction[0]
 
             if prediction == 0:
                 sendMessage(encodeMessage("Not Phishing"))
-            else:  # change this to equals 1
+            elif prediction == 1:  # change this to equals 1
                 sendMessage(encodeMessage("Phishing"))
+            else:
+                sendMessage(encodeMessage("Error"))
         except:
             sendMessage(encodeMessage("Invalid Input"))
 
