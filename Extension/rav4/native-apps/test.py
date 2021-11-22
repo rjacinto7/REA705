@@ -1,6 +1,7 @@
 import struct
 import json
-
+import pickle
+import numpy as np
 # Original code from websiteDownloader
 from urllib.parse import urlparse
 from pathlib import Path
@@ -12,23 +13,6 @@ import sys
 import os
 import re
 
-# Imports for tf-idf cosine similarity
-import nltk
-from nltk.corpus import stopwords
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-import pandas as pd
-stopPattern = re.compile(
-    r'\b(' + r'|'.join(stopwords.words('english')) + r')\b\s*')
-englishWords = set(nltk.corpus.words.words())
-comparitor = []
-
-with open("reCleanedEmails.txt") as file:
-    emailTexts = file.readlines()
-    emailTexts = [line.rstrip() for line in emailTexts]
-    file.close()
-totalEmails = len(emailTexts)
-
 # set current working directory to same directory
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -36,10 +20,12 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 headers = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36'}
 
-# Take a site URL and count its  URL Features
+with open('model_pickle', 'rb') as f:
+    mp = pickle.load(f)
 
 
 def urlFeatureCounter(site):
+    '''Take a site URL and count its  URL Features'''
     hostname = urlparse(site).netloc
     site = str(site)
     urlCount = []
@@ -71,10 +57,9 @@ def urlFeatureCounter(site):
     totalCount = ' '.join(str(e) for e in urlCount)
     return totalCount
 
-# Take a site URL and count its Page Features
-
 
 def pageFeatureCounter(site):
+    '''Take a site URL and count its Page Features'''
     # try to open url to fetch webpage
     try:
         site = str(site)
@@ -105,44 +90,13 @@ def pageFeatureCounter(site):
     except urllib.error.URLError:
         return "Error."
 
-# clean submitted texts
+
+def Convert(string):
+    '''convert string to list'''
+    li = list(string.split(" "))
+    return li
 
 
-def cleanText(submittedText):
-    # Remove special characters from phishing emails/text (Regex)
-    submittedText = re.sub(r"([^a-zA-Z\s]+?)", "", submittedText)
-    # Not a task but noticed that some emails have spaced out words to evade spam filters
-    # Join single space letters
-    submittedText = re.sub(r"\b(\w) (?=\w\b)", r"\1", submittedText)
-    # Remove Multiple Spaces
-    submittedText = re.sub(r'\s+', ' ', submittedText)
-    # Join single spaces again
-    submittedText = re.sub(r"\b(\w) (?=\w\b)", r"\1", submittedText)
-    # Remove all non-English words (Dictionary - Enchant/Other)
-    submittedText = " ".join(w for w in nltk.wordpunct_tokenize(
-        submittedText) if w.lower() in englishWords or not w.isalpha())
-    # Remove stopwords + words smaller than 2 characters
-    submittedText = stopPattern.sub('', submittedText)
-    submittedText = re.sub(r'\b\w{1,2}\b', '', submittedText)
-    return submittedText
-
-# calculate TF-IDF cosine similarity score
-
-
-def cosineSimilarity(currentScore):
-    cv = CountVectorizer()
-    cv_fit = cv.fit_transform(currentScore)
-    doc_term_matrix = cv_fit.todense()
-    df = pd.DataFrame(doc_term_matrix,
-                      columns=cv.get_feature_names(),
-                      index=(list(range(0, 2))))
-    df
-
-    cosineSimilarityScore = cosine_similarity(df, df)
-    return cosineSimilarityScore[0][1]
-
-
-#!/usr/bin/env python
 try:
     # Python 3.x version
     # Read a message from stdin and decode it.
@@ -171,22 +125,20 @@ try:
         receivedMessage = getMessage()
         try:
             receivedMessage = str(receivedMessage)
-
             # URL + Page Counter
-            toBeSent = urlFeatureCounter(receivedMessage)
-            toBeSent += " " + pageFeatureCounter(receivedMessage)
+            countedURLFeatures = urlFeatureCounter(receivedMessage)
+            countedURLFeatures = Convert(countedURLFeatures)
+            countedPageFeatures = pageFeatureCounter(receivedMessage)
+            countedPageFeatures = Convert(countedPageFeatures)
+            data = countedPageFeatures + countedURLFeatures
+            data = np.reshape(data, (-1, 21))
+            prediction = mp.predict(data)
+            prediction = str(prediction)
 
-            # TF-IDF Cosine Similarity Average
-            # cleanedUserInput = cleanText(receivedMessage)
-            # comparitor.append(cleanedUserInput)
-            # score = 0
-            # for currentEmail in emailTexts:
-            #     comparitor.append(currentEmail)
-            #     score += cosineSimilarity(comparitor)
-            #     comparitor.pop()
-            # toBeSent = str(score/totalEmails)
-
-            sendMessage(encodeMessage(toBeSent))
+            if prediction == 0:
+                sendMessage(encodeMessage("Not Phishing"))
+            else:  # change this to equals 1
+                sendMessage(encodeMessage("Phishing"))
         except:
             sendMessage(encodeMessage("Invalid Input"))
 
