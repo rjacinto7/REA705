@@ -5,9 +5,5 @@
     "manifest_version": 2,
     "permissions" :["nativeMessaging"],
     "browser_action": {"default_popup":"popup.html"},
-    "icons": {"128": "icons/vlad1.png"},
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
-      }
+    "icons": {"128": "icons/vlad1.png"}
 }

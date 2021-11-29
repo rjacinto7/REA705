@@ -182,15 +182,13 @@ try:
             score = score/totalEmails
             if score <= 0.015:
                 nameScore = "Low attention\n"
-            if score <= 0.015:
-                nameScore = "Proceed with some caution\n"
             elif score > 0.015 and score <= 0.025:
-                namescore = "Proceed with caution\n"
+                nameScore = "Proceed with caution\n"
             elif score > 0.025 and score <= 0.035:
-                namescore = "Proceed with extreme caution\n"
+                nameScore = "Proceed with extreme caution\n"
             elif score > 0.035:
-                namescore = "High possibility of spam/phishing\n"
-            toBeSent = str(namescore)
+                nameScore = "High possibility of spam/phishing\n"
+            toBeSent = str(nameScore)
 
             sendMessage(encodeMessage(toBeSent))
         except:

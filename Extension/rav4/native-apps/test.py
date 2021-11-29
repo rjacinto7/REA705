@@ -23,8 +23,6 @@ headers = {
 with open('model_pickle', 'rb') as f:
     mp = pickle.load(f)
 
-p = open("logging.txt", "a")
-
 
 def urlFeatureCounter(site):
     '''Take a site URL and count its  URL Features'''
@@ -129,24 +127,17 @@ try:
             receivedMessage = str(receivedMessage)
             # URL + Page Counter
             countedURLFeatures = urlFeatureCounter(receivedMessage)
-            p.write("1")
             countedURLFeatures = Convert(countedURLFeatures)
-            p.write("2")
             countedPageFeatures = pageFeatureCounter(receivedMessage)
-            p.write("3")
             countedPageFeatures = Convert(countedPageFeatures)
-            p.write("4")
             data = countedPageFeatures + countedURLFeatures
-            p.write("5")
             data = np.reshape(data, (-1, 21))
-            p.write("6")
             prediction = mp.predict(data)
-            p.write("7")
             prediction = prediction[0]
 
             if prediction == 0:
                 sendMessage(encodeMessage("Not Phishing"))
-            elif prediction == 1:  # change this to equals 1
+            elif prediction == 1:
                 sendMessage(encodeMessage("Phishing"))
             else:
                 sendMessage(encodeMessage("Error"))
