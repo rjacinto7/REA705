@@ -34,6 +34,8 @@ These our our week 9 tasks:
 <img src="weeklyImgs\Week9_Tasks.png" alt="Week 9 Tasks">
 
 ### Week 10
+These our our week 9 tasks:
+<img src="weeklyImgs\Week10_Tasks.png" alt="Week 10 Tasks">
 
 ### Week 11
 
