@@ -26,15 +26,15 @@ These are our week 7 tasks:
 <img src="weeklyImgs\Week7Tasks.png" alt="Week 7 Tasks">
 
 ### Week 8
-These our our week 8 tasks:
+These are our week 8 tasks:
 <img src="weeklyImgs\Week8_Tasks.png" alt="Week 8 Tasks">
 
 ### Week 9
-These our our week 9 tasks:
+These are our week 9 tasks:
 <img src="weeklyImgs\Week9_Tasks.png" alt="Week 9 Tasks">
 
 ### Week 10
-These our our week 9 tasks:
+These are our week 10 tasks:
 <img src="weeklyImgs\Week10_Tasks.png" alt="Week 10 Tasks">
 
 ### Week 11
