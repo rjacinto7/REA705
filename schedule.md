@@ -39,7 +39,7 @@ These are our week 10 tasks:
 
 ### Week 11
 These are our week 11 tasks:
-<img src="weeklyImgs\Week10_Task.png" alt="Week 11 Tasks">
+<img src="weeklyImgs\Week11_Tasks.png" alt="Week 11 Tasks">
 
 ### Week 12
 <br />
